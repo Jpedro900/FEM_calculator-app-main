@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <link id="theme" rel="stylesheet" type="text/css" href="src/css/theme1.css">
+  <link rel="stylesheet" type="text/css" href="src/css/reset.css">
+
+</head>
+<body>
+  <div class="content">
+    <header class="cabecalho">
+      <h1>calc</h1>
+      <div class="theme">
+        <span>THEME</span>
+        <div class="buttonsheader">
+        <input type="radio" name="button" id="button1" checked onclick="changeTheme('src/css/theme1.css')">
+        <input type="radio" name="button" id="button2" onclick="changeTheme('src/css/theme2.css')">
+        <input type="radio" name="src/css/button" id="button3" onclick="changeTheme('src/css/theme3.css')">
+        </div>
+      </div>
+    </header>
+    <section class="screen">
+      <p  id="screennumbers"></p>
+    </section>
+    <section class="keypad">
+      <div class="row">
+        <button class="key" id="num7">7</button>
+        <button class="key" id="num8">8</button>
+        <button class="key" id="num9">9</button>
+        <button class="key operator" id="del" onclick="deletar()">DEL</button>
+      </div>
+      <div class="row">
+        <button class="key" id="num4">4</button>
+        <button class="key" id="num5">5</button>
+        <button class="key" id="num6">6</button>
+        <button class="key" id="plus">+</button>
+      </div>
+      <div class="row">
+        <button class="key" id="num1">1</button>
+        <button class="key" id="num2">2</button>
+        <button class="key" id="num3">3</button>
+        <button class="key" id="minus">-</button>
+      </div>
+      <div class="row">
+        <button class="key" id="point">.</button>
+        <button class="key" id="num0">0</button>
+        <button class="key" id="division">/</button>
+        <button class="key" id="times">*</button>
+      </div>
+      <div class="row">
+        <button class="key operator" id="reset" onclick="reset()">RESET</button>
+        <button class="key operator" id="equal" onclick="showTotal()">=</button>
+      </div>
+    </section>
+  </div>
+<script src="src/js/index.js"></script>
+</body>
+</html>

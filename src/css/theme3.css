@@ -1,0 +1,123 @@
+html{
+    font-size: 62.5%;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body{
+    background-color: hsl(268, 75%, 9%);
+    height: 100vh;
+    color: hsl(52, 100%, 62%);
+}
+
+.content{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 72rem;
+    width: 56rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.theme{
+    display: flex;
+    align-items:center;
+    gap: 2rem;
+}
+
+.buttonsheader{
+    background-color: hsl(268, 71%, 12%);
+    border-radius: 5rem;
+    width: 8rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.screen{
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+    width: 54rem;
+    text-align: end;
+    padding: 4rem;
+    font-size: 7rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+
+.keypad{
+    background-color: hsl(268, 71%, 12%);
+    width: 54rem;
+    height:50rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.key{
+    background-color: hsl(268, 47%, 21%);
+    height: 6rem;
+    width: 10rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 0 hsl(290, 70%, 36%);
+    font-size: 3.2rem;
+    font-family: 'League Spartan', sans-serif;
+    color: hsl(52, 100%, 62%);
+    text-align: center;
+}
+
+.keypad button:hover{
+    cursor: pointer;
+    background-color: hsl(268, 47%, 32%);
+}
+
+button#del{
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0 0.5rem 0 hsl(285, 91%, 52%);
+    color: white;
+}
+
+button#del:hover{
+    background-color: hsl(281, 89%, 37%);
+}
+
+button#reset{
+    width: 23rem;
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0 0.5rem 0 hsl(285, 91%, 52%);
+    color: white;
+}
+
+button#reset:hover{
+    background-color: hsl(281, 89%, 37%);
+}
+
+button#equal{
+    width: 23rem;
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0 0.5rem 0 hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
+}
+
+button#equal:hover{
+    background-color: hsl(176, 100%, 55%);
+}
